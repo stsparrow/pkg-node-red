@@ -12,5 +12,3 @@ cp new-package.json node_modules/node-red/package.json
     --targets node8-linux-armv7,node8-linux-x64,node8-win-x64,node8-macos-x64 \
     --out-path ../../release --public .
 )
-
-ls -alh ./release

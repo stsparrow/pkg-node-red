@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x 
+
 ## Create armv7
 (
   mkdir userprog-armv7

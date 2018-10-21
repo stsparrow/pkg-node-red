@@ -1,5 +1,7 @@
 # pkg-node-red
 
+[![Build Status](https://www.travis-ci.com/imZack/pkg-node-red.svg?branch=master)](https://www.travis-ci.com/imZack/pkg-node-red)
+
 PKG version of Node-Red
 
 ## Usage
