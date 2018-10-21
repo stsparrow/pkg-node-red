@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true; do
+  ./node-red --settings settings.js --userDir data
+  sleep 5
+done
