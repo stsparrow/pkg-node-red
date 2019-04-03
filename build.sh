@@ -3,7 +3,7 @@
 set -x
 
 npm install "node-red@$NODERED_VERSION"
-node -e "const data = require('./node_modules/node-red/package.json'); data.pkg = { assets: ['./**/*'] }; require('fs').writeFileSync('new-package.json', JSON.stringify(data, null, ' '));"
+node -e "const data = require('./node_modules/node-red/package.json'); data.pkg = { assets: ['./**/*'] }; data.dependencies['node-red-contrib-modbus'] = '3.6.1'; require('fs').writeFileSync('new-package.json', JSON.stringify(data, null, ' '));"
 cp new-package.json node_modules/node-red/package.json
 (
   cd node_modules/node-red || exit 1
