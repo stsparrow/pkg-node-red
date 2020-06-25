@@ -9,6 +9,6 @@ cp new-package.json node_modules/node-red/package.json
   cd node_modules/node-red || exit 1
   npm install --production
   pkg \
-    --targets node10.17.0-linux-armv7 \
+    --targets node10-linux-armv7 \
     --out-path ../../release --public .
 )
