@@ -1,6 +1,4 @@
 sudo: false
-addons:
-  chrome: stable
 language: node_js
 matrix:
   include:
