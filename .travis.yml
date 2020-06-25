@@ -6,7 +6,7 @@ matrix:
   include:
     - node_js: "12"
       before_script:
-      - npm install -g pkg
+      - npm install -g pkg@4.3.8
       script:
       - bash build.sh
       - bash tp-userprog.sh
