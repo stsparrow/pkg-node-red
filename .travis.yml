@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- '10'
+- '12'
 install:
 - npm install -g pkg
 script:
@@ -11,7 +11,7 @@ script:
 os:
 - linux
 env:
-- NODERED_VERSION=1.0.3
+- NODERED_VERSION=1.0.6
 compiler:
 - gcc
 deploy:
