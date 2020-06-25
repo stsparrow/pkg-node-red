@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- '12.13.1'
+- '10.16.0'
 install:
 - npm install -g --unsafe-perm --build-from-source pkg
 script:
