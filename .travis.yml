@@ -3,7 +3,7 @@ language: node_js
 node_js:
 - '10.16.0'
 install:
-- npm install -g --unsafe-perm --build-from-source pkg
+- npm install -g pkg
 script:
 - bash build.sh
 - bash tp-userprog.sh
