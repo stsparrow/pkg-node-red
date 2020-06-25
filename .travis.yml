@@ -1,15 +1,19 @@
 sudo: false
+addons:
+  chrome: stable
 language: node_js
-node_js:
-- '8.16.0'
-install:
-- npm install -g pkg
-script:
-- bash build.sh
-- bash tp-userprog.sh
-- ls -alh ./release
+matrix:
+  include:
+    - node_js: "12"
+    - node_js: "10"
+      before_script:
+      - npm install -g pkg istanbul coveralls
+      script:
+      - bash build.sh
+      - bash tp-userprog.sh
+      - ls -alh ./release
 env:
-- NODERED_VERSION=0.19.5
+- NODERED_VERSION=1.0.6
 deploy:
   provider: releases
   api_key:
