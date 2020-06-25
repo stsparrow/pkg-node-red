@@ -1,19 +1,15 @@
 sudo: false
 language: node_js
 node_js:
-- '12'
+- '8'
 install:
 - npm install -g pkg
 script:
 - bash build.sh
 - bash tp-userprog.sh
 - ls -alh ./release
-os:
-- linux
 env:
-- NODERED_VERSION=1.0.6
-compiler:
-- gcc
+- NODERED_VERSION=0.19.5
 deploy:
   provider: releases
   api_key:
