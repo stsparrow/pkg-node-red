@@ -3,7 +3,7 @@ language: node_js
 node_js:
 - '12'
 install:
-- apt isntall bcrypt -g --unsafe-perm --build-from-source
+- apt install bcrypt -g --unsafe-perm --build-from-source
 - npm install -g pkg
 script:
 - bash build.sh
