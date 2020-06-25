@@ -4,7 +4,7 @@ addons:
 language: node_js
 matrix:
   include:
-    - node_js: "12"
+    - node_js: "10"
       before_script:
       - npm install -g pkg@4.3.8
       script:
