@@ -10,7 +10,7 @@ matrix:
       - bash tp-userprog.sh
       - ls -alh ./release
 env:
-- NODERED_VERSION=1.0.6
+- NODERED_VERSION=0.20.8
 deploy:
   provider: releases
   api_key:
